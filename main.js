@@ -23,9 +23,9 @@ function onSend() {
                     pupa
                   </div>`
             );
+            scrollMessagesToBottom()
         }, 1000);
 
-        scrollMessagesToBottom()
 
     }
 }
