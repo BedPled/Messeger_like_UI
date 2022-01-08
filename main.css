@@ -1,0 +1,117 @@
+body {
+    background: lightsteelblue;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+
+    border: 1px solid white;
+
+}
+
+.container__wrap {
+    display: flex;
+    width: 100vw;
+}
+
+.container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 99vh;
+
+}
+
+.messenger {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 87vh;
+    padding: 10px;
+}
+
+.user {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    height: 10%;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.text__input {
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text__input button {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.container h4{
+    padding-left: 5px;
+}
+
+
+.text__input textarea{
+    padding:15px 5px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    resize: none;
+}
+
+.message {
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    scroll-snap-align: none;
+}
+
+.message__no, .message__from, .message__to {
+    max-width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.message__from {
+    background: #b9ffcf;
+    justify-content: left;
+    align-self: start;
+
+}
+
+.message__to {
+    background: #ebeeef;
+    justify-content: right;
+    align-self: end;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+*::-webkit-scrollbar-track {
+    opacity: 0;
+    background: #ffffff;
+}
+*::-webkit-scrollbar-thumb {
+    opacity: 0;
+    border-radius: 5px;
+    border: 3px solid gray;
+}
