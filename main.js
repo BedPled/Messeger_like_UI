@@ -16,8 +16,6 @@ function onSend() {
         textInput.value = ''
         scrollMessagesToBottom()
 
-
-
         setTimeout(() => {
             document.getElementById('chat').insertAdjacentHTML(
                 'beforeend',
@@ -26,6 +24,8 @@ function onSend() {
                   </div>`
             );
         }, 1000);
+
+        scrollMessagesToBottom()
 
     }
 }
